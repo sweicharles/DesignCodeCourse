@@ -12,23 +12,23 @@ struct CoursesView: View {
     @State var show = false
     @Namespace var namespace
     
+    
     var body: some View{
         ZStack {
             ScrollView {
                 VStack(spacing: 20) {
-                    CourseItem() // aways put the geometry effect before the frame, the isSource prop define which one is original, so the effect and make another one as target
-                        .matchedGeometryEffect(id: "Card", in: namespace, isSource: !show)
-                        .frame(width: 335, height: 250)
-                    
-                    CourseItem()
-                        .frame(width: 335, height: 250)
+                    ForEach(courses) { item in
+                        CourseItem(course: item)
+                            .matchedGeometryEffect(id: item.id, in: namespace, isSource: !show)
+                            .frame(width: 335, height: 250)
+                    }
                 }
                 .frame(maxWidth:.infinity)
             }
             if show {
                 ScrollView {
-                    CourseItem()
-                        .matchedGeometryEffect(id: "Card", in: namespace)
+                    CourseItem(course: courses[3])
+                        .matchedGeometryEffect(id: courses[0].id, in: namespace)
                         .frame(height: 300)
                     VStack(spacing: 5){
                         ForEach(0 ..< 20) { item in
@@ -39,8 +39,6 @@ struct CoursesView: View {
                 }
                 .background(Color("Background 1"))
                 .transition(
-                    // Apply transaction animaiton on opacity style with spring style
-                    // .asymmetric can let us decide what kinda a transition when get in and get out
                     .asymmetric(
                         insertion: AnyTransition
                             .opacity

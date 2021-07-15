@@ -25,6 +25,8 @@
 		A12FE46826A008E500C40C76 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12FE46626A008E500C40C76 /* CourseItem.swift */; };
 		A12FE46C26A00C7000C40C76 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12FE46B26A00C7000C40C76 /* CourseList.swift */; };
 		A12FE46D26A00C7000C40C76 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12FE46B26A00C7000C40C76 /* CourseList.swift */; };
+		A12FE46F26A0916000C40C76 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12FE46E26A0915F00C40C76 /* Course.swift */; };
+		A12FE47026A0916000C40C76 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12FE46E26A0915F00C40C76 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,7 @@
 		A12FE463269FCFCB00C40C76 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		A12FE46626A008E500C40C76 /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
 		A12FE46B26A00C7000C40C76 /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
+		A12FE46E26A0915F00C40C76 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,7 @@
 				A12FE46926A00B6700C40C76 /* Navigation */,
 				A12FE46A26A00B9200C40C76 /* Items */,
 				A12FE460269F926100C40C76 /* CoursesView.swift */,
+				A12FE46E26A0915F00C40C76 /* Course.swift */,
 				A12FE46B26A00C7000C40C76 /* CourseList.swift */,
 				A10B8BCF269DC8D500B1E684 /* Assets.xcassets */,
 			);
@@ -344,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A12FE46F26A0916000C40C76 /* Course.swift in Sources */,
 				A12FE464269FCFCB00C40C76 /* Sidebar.swift in Sources */,
 				A12FE46726A008E500C40C76 /* CourseItem.swift in Sources */,
 				A10B8BF8269DC8D500B1E684 /* ContentView.swift in Sources */,
@@ -358,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A12FE47026A0916000C40C76 /* Course.swift in Sources */,
 				A12FE465269FCFCB00C40C76 /* Sidebar.swift in Sources */,
 				A12FE46826A008E500C40C76 /* CourseItem.swift in Sources */,
 				A10B8BF9269DC8D500B1E684 /* ContentView.swift in Sources */,
