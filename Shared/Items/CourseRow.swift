@@ -12,10 +12,10 @@ struct CourseRow: View {
         HStack(alignment: .top){
             Image(systemName: "paperplane.circle.fill")
                 .renderingMode(.template)
-                .frame(width: 48, height: 48, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(width: 48, height: 48, alignment: .center)
                 .imageScale(.medium)
                 .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.blue/*@END_MENU_TOKEN@*/)
-                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                .clipShape(Circle())
                 .foregroundColor(.white)
             VStack(alignment: .leading, spacing: 4.0){
                 Text("SwiftUI")
