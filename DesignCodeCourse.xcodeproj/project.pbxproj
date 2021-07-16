@@ -118,9 +118,9 @@
 			children = (
 				A10B8BCD269DC8D200B1E684 /* DesignCodeCourseApp.swift */,
 				A12FE46926A00B6700C40C76 /* Navigation */,
+				A11DB8C126A1D51A008C4A54 /* Model */,
 				A12FE46A26A00B9200C40C76 /* Items */,
 				A12FE460269F926100C40C76 /* CoursesView.swift */,
-				A12FE46E26A0915F00C40C76 /* Course.swift */,
 				A12FE46B26A00C7000C40C76 /* CourseList.swift */,
 				A10B8BCF269DC8D500B1E684 /* Assets.xcassets */,
 			);
@@ -171,6 +171,14 @@
 				A10B8BF5269DC8D500B1E684 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		A11DB8C126A1D51A008C4A54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A12FE46E26A0915F00C40C76 /* Course.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A12FE46926A00B6700C40C76 /* Navigation */ = {
